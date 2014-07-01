@@ -6,6 +6,16 @@
         * {
             box-sizing: border-box;
         }
+
+        .container {
+            margin: 40px;
+        }
+
+        /* table width */
+        table {
+            width: 100%;
+            table-layout: fixed;
+        }
         /* table border model */
         table {
             border-collapse: separate;
@@ -108,6 +118,22 @@
             font-weight: 700;
             color: #3d3e3e;
         }
+        /* columns */
+        table tr td:nth-child(1) {
+            width: 25px;
+            text-align: center;
+        }
+        table input[type="checkbox"] {
+            margin: 0;
+        }
+        table tr td:nth-child(3),
+        table tr td:nth-child(4),
+        table tr td:nth-child(5),
+        table tr td:nth-child(6),
+        table tr td:nth-child(7) {
+            width: 100px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -115,9 +141,11 @@
     <h3>Procs</h3>
     <h4>Border radius</h4>
     <p>It's hard to set border radius.</p>
+    <div class="container">
     <table>
         <thead>
             <tr>
+                <td></td>
                 <td>Employee</td>
                 <td>Total</td>
                 <td>Productive</td>
@@ -128,6 +156,7 @@
         </thead>
         <tfoot>
             <tr>
+                <td></td>
                 <td>Total</td>
                 <td>23:44</td>
                 <td>03:44</td>
@@ -138,72 +167,81 @@
         </tfoot>
         <tbody class="data">
             <tr>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
+                <td><input type="checkbox"></td>
+                <td>John Smith</td>
+                <td>53:23</td>
+                <td>23:34</td>
+                <td>33:64</td>
+                <td>13:34</td>
+                <td>15:24</td>
             </tr>
             <tr>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
+                <td><input type="checkbox"></td>
+                <td>John Dou</td>
+                <td>53:23</td>
+                <td>23:34</td>
+                <td>33:64</td>
+                <td>13:34</td>
+                <td>15:24</td>
             </tr>
             <tr>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
+                <td><input type="checkbox"></td>
+                <td>Jane Smith</td>
+                <td>53:23</td>
+                <td>23:34</td>
+                <td>33:64</td>
+                <td>13:34</td>
+                <td>15:24</td>
             </tr>
             <tr>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
+                <td><input type="checkbox"></td>
+                <td>Edward Walker</td>
+                <td>53:23</td>
+                <td>23:34</td>
+                <td>33:64</td>
+                <td>13:34</td>
+                <td>15:24</td>
             </tr>
             <tr>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
+                <td><input type="checkbox"></td>
+                <td>Rob Dougan</td>
+                <td>53:23</td>
+                <td>23:34</td>
+                <td>33:64</td>
+                <td>13:34</td>
+                <td>15:24</td>
             </tr>
             <tr>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
+                <td><input type="checkbox"></td>
+                <td>Nina Hagen</td>
+                <td>53:23</td>
+                <td>23:34</td>
+                <td>33:64</td>
+                <td>13:34</td>
+                <td>15:24</td>
             </tr>
             <tr>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
+                <td><input type="checkbox"></td>
+                <td>Bob Brown</td>
+                <td>53:23</td>
+                <td>23:34</td>
+                <td>33:64</td>
+                <td>13:34</td>
+                <td>15:24</td>
             </tr>
             <tr>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
-                <td>some data we need to display</td>
+                <td><input type="checkbox"></td>
+                <td>Tomas Grey</td>
+                <td>53:23</td>
+                <td>23:34</td>
+                <td>33:64</td>
+                <td>13:34</td>
+                <td>15:24</td>
             </tr>
         </tbody>
         <tbody class="subtotal">
             <tr>
+                <td></td>
                 <td><b>4 of 12</b> selected</td>
                 <td>53:23</td>
                 <td>23:34</td>
@@ -213,5 +251,6 @@
             </tr>
         </tbody>
     </table>
+    </div>
 </body>
 </html>
